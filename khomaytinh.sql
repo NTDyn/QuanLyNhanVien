@@ -241,7 +241,6 @@ CREATE TABLE `phieuxuat` (
 CREATE TABLE `sanpham` (
   `masanpham` int(11) NOT NULL,
   `tensanpham` varchar(255) NOT NULL,
-  `soluong` int(11) NOT NULL DEFAULT 0,
   `gianhap` bigint(20) NOT NULL,
   `giaxuat` bigint(20) NOT NULL,
   `cpu` varchar(255) DEFAULT NULL,
@@ -421,6 +420,5 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 
-INSERT INTO `nguoidung` (`taikhoan`, `matkhau`, `hoten`, `email`, `manhomquyen`, `trangthai`) VALUES
-('duyen843', 'duyen', 'Nguyễn Thuy Duyen', 'thuyduyen@gmail.com', 2, 1);
-DELETE FROM `nguoidung` WHERE `taikhoan` = 'duyen843';
+INSERT INTO `chucnang` (`machucnang`, `tenchucnang`, `trangthai`) VALUES
+('tonkho', 'Tồn kho', 1)
